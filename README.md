@@ -4,4 +4,4 @@
 
 - add summary - 
 
-Full CV available [here](https://github.com/AlessandroLovo/CV/releases/latest)
+Full CV available [here](https://github.com/AlessandroLovo/CV/releases/latest/download/CV.pdf)
