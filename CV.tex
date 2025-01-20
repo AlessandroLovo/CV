@@ -5,11 +5,16 @@
 \usepackage[T1]{fontenc}
 \usepackage[utf8]{inputenc}
 \usepackage{url}
-\usepackage{hyperref}
+\usepackage{natbib}
+% \usepackage{apacite}
 \usepackage{multicol}
 \usepackage{enumitem}
 
+\usepackage{hyperref}
 
+
+\renewcommand{\bibsection}{\section*{Full references to publications}}
+\newcommand{\bu}{$\bullet$ }
 
 \begin{document}
 
@@ -41,9 +46,11 @@
 
 \section*{Education}
   \begin{description}[style=multiline,leftmargin=3cm,align=right]
-    \item[2021-present]
-      PhD @ \emph{\'Ecole Normale Supérieure de Lyon}: Studying abrupt climate changes using machine learning and rare
-events algorithms
+    \item[2021-2024]
+      PhD @ \emph{\'Ecole Normale Supérieure de Lyon} \\
+      Thesis title: Studying extreme climate events using machine learning and rare event algorithms. \\
+      Defense date: October 15, 2024 \\
+      During my PhD I did two 3-month Secondments: one at the University of Copenhagen and the Other at the University of Utrecht.
     \item[2016-2022]
       \emph{Scuola Galileiana di Studi Superiori, Padova}. Honors college with scholarship: over the five years of Bsc and Msc, students attend 12 courses and several seminars on various topics such as \emph{3D printing} or \emph{Quantum Optics}. \\ For more info see \url{http://www.unipd-scuolagalileiana.it/en} \\
       Thesis title: Interpretability of deep learning probabilistic prediction of extreme heatwaves over France \\
@@ -72,8 +79,10 @@ events algorithms
     \item[Languages]
       Italian (Mother tongue) \\
       English (C1) \\
-      French (B1) \\
-      German (A2)
+      French (B2) \\
+      German (A2) \\
+      Danish (A1) \\
+      Dutch (A1)
     \item[Software]
       python (including PyTorch and Tensorflow), C++, LaTeX, Excel
     \item[Transversal]
@@ -93,31 +102,38 @@ events algorithms
 
 \section*{Research interests}
   \begin{description}[style=multiline,leftmargin=3cm,align=right]
-    \item[] Climate dynamics, climate change, machine learning, neural networks, complex systems, renewable energies, nanophysics, space exploration, nuclear fusion
+    \item[] Climate dynamics, climate change, machine learning, neural networks, complex systems, renewable energies, green transition, nanophysics, space exploration, nuclear fusion
   \end{description}
 
 
 \section*{Other interests}
   \begin{description}[style=multiline,leftmargin=3cm,align=right]
-    \item[Sports] Sailing, skiing, tennis, competitive chess
-    \item[Music] Piano, cello, composing/arranging
-    \item[Other] Woodworking, painting
+    \item[Sports] Sailing, bouldering, skiing, competitive chess
+    \item[Music] Piano, guitar, cello, composing/arranging
+    \item[Other] Woodworking, painting, creative writing, cooking
   \end{description}
 
 \section*{Publications}
   \begin{description}[style=multiline,leftmargin=3cm,align=right]
+    \item[2024]
+    \bu SUBMITTED to Proceedings of the Royal Society A: \emph{The role of edge states for early-warning of tipping points} \cite{lohmannRoleEdgeStates2024} \\
+    \bu SUBMITTED to Artificial Intelligence for the Earth Systems: \emph{Tackling the Accuracy-Interpretability Trade-off in a Hierarchy of Machine Learning Models for the Prediction of Extreme Heatwaves} \cite{lovoTacklingAccuracyInterpretabilityTradeHierarchy2024} \\
+    \bu SUBMITTED to Journal of Advances in Modeling Earth Systems: \emph{Gaussian Framework and Optimal Projection of Weather Fields for Prediction of Extreme Events} \cite{mascoloGaussianFrameworkOptimal2024} (I am joint first author)
     \item[2023]
-      IN PROGRESS: \emph{Interpretability of deep learning probabilistic forecast of extreme heatwaves over France} \\
-      IN PROGRESS: \emph{Committor functions and optimal projection maps for heat waves assuming Gaussian statistics}
+    \bu \emph{Active Modulation of Er3+ Emission Lifetime by VO2 Phase-Change Thin Films} \cite{kalinicActiveModulationEr32024} (publication resulting from my Master Thesis)
   \end{description}
 
 \section*{Conferences}
   \begin{description}[style=multiline,leftmargin=3cm,align=right]
-    \item[2023] 
-      April 24-28, Wien, Austria: \textbf{EGU}, talk: \emph{Interpretable probabilistic forecast of extreme heat waves} \\
-      February 22-24, Muenchen, Germany: \textbf{Joint CriticalEarth-TiPES conference}, PICO talk: \emph{Trying to tip the AMOC with Rare Event Algorithms}
+    \item[2024]
+      \bu April 14-19, Wien, Austria: \textbf{EGU}, talk: \emph{A Gaussian framework for optimal prediction of extreme heat waves} (presented by F. Bouchet) \cite{mascoloGaussianFrameworkOptimal2024a}
+    \item[2023]
+      \bu October 2-6, Paris, France: \textbf{Group de recherche "Défis Théoriques pour les sciences du climat: Workshop Previsibilité et points de bascule}, poster: \emph{Heat waves prediction using Gaussian assumption} \\
+      \bu June 5-17, Saint Pierre Quiberon, France: \textbf{Beg Rohu Summer School 'Wind and Physics'}, poster: \emph{Heat waves prediction using Gaussian assumption} \\
+      \bu April 24-28, Wien, Austria: \textbf{EGU}, talk: \emph{Interpretable probabilistic forecast of extreme heat waves} \cite{lovoInterpretableProbabilisticForecast2023} \\
+      \bu February 22-24, Muenchen, Germany: \textbf{Joint CriticalEarth-TiPES conference}, PICO talk: \emph{Trying to tip the AMOC with Rare Event Algorithms}
     \item[2022]
-      December 14, Paris, France: \textbf{ANR SAMPRACE meeting}, talk: \emph{Interpretability of deep learning probabilistic prediction of extreme heatwaves over France}
+      \bu December 14, Paris, France: \textbf{ANR SAMPRACE meeting}, talk: \emph{Interpretability of deep learning probabilistic prediction of extreme heatwaves over France}
   \end{description}
 
 
@@ -142,6 +158,10 @@ events algorithms
   %   tiziana.cesca@unipd.it
 
 \end{description}
+
+% \bibliographystyle{apalike}
+\bibliographystyle{plainnat}
+\bibliography{../mypubs}
 
 
 \end{document}
